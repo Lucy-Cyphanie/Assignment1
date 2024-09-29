@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Beauty Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-marketing">
+        <h2>Unveil Your Inner Glow with Our Premium Products</h2>
+        <p>Explore our collection of top-tier beauty products designed to enhance your natural beauty. From radiant foundations to long-lasting lipsticks, we bring you the best beauty essentials at unbeatable prices.</p>
+        <p><strong>Limited-Time Offer:</strong> Get 20% off your first purchase. Use code <em>BLISS20</em> at checkout!</p>
+    </section>
+
+    <section class="product-gallery">
+        <h2>Popular Products</h2>
+        <div class="product-row">
+            <div class="product-item">
+                <img src="images/download (7).jfif" alt="Lipstick">
+                <h3>Matte Lipstick</h3>
+                <p>ksh 150.00</p>
+            </div>
+            <div class="product-item">
+                <img src="images/download (14).jfif" alt="Foundation">
+                <h3>Full Coverage Foundation</h3>
+                <p>ksh 180.00</p>
+            </div>
+            <div class="product-item">
+                <img src="images/download (9).jfif" alt="Eyeshadow Palette">
+                <h3>Vibrant Eyeshadow Palette</h3>
+                <p>ksh 250.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Select Your Favorite Products</h2>
+        <form action="/submit-products" method="POST">
+            <label for="product">Choose a product:</label>
+            <select id="product" name="product">
+                <option value="lipstick">Lipstick</option>
+                <option value="foundation">Foundation</option>
+                <option value="eyeshadow">Eyeshadow</option>
+            </select>
+
+            <h3>Available Shades</h3>
+            <input type="checkbox" name="shade" value="red"> Red<br>
+            <input type="checkbox" name="shade" value="pink"> Pink<br>
+            <input type="checkbox" name="shade" value="nude"> Nude<br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
